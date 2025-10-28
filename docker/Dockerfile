@@ -1,7 +1,7 @@
 FROM node:20-alpine as stripes_build
 
-ARG OKAPI_URL=http://localhost:9130
-ARG TENANT_ID=diku
+ARG OKAPI_URL=http://kong-folio-dev.stanford.edu
+ARG TENANT_ID=sul
 ARG CXXFLAGS="-std=c++17"
 
 RUN mkdir -p /etc/folio/stripes
